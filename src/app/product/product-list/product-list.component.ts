@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Iproducto } from '../iproducto';
 
 @Component({
   selector: 'app-product-list',
@@ -12,7 +13,11 @@ export class ProductListComponent {
   muestraImagen:boolean=true;
   listFilter:string='';
 
-  productos:any[]=[
+  showImage():void{
+    this.muestraImagen=!this.muestraImagen;
+  }
+
+  productos:Iproducto[]=[
     {
       "productoId":1,
       "Modelo":"Sentra",
@@ -37,7 +42,7 @@ export class ProductListComponent {
       "productoId":3,
       "Modelo":"Rio",
       "Descripcion":"2 puertas familiar",
-      "year":"Enero 2 2023",
+      "year":"january 2 2022",
       "precio":200000,
       "Marca":"KIA",
       "Color":"Azul",
