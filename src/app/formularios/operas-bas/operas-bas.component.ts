@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './operas-bas.component.html',
   styleUrls: ['./operas-bas.component.css']
 })
+
 export class OperasBasComponent {
   num1='';
   num2='';
@@ -24,7 +25,6 @@ export class OperasBasComponent {
       case 'divi':
         this.res=parseInt(this.num1)/parseInt(this.num2);
         break;
-      default:
     }
     return this.res;
   }
