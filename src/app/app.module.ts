@@ -2,10 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar'
-import {MatIconModule} from '@angular/material/icon'
+import { MaterialModule } from './material/material/material.module';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
@@ -28,10 +25,7 @@ import { MenuComponent } from './menu/menu/menu.component';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
